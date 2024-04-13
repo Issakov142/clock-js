@@ -11,7 +11,9 @@ startButton.addEventListener("click", function () {
 const stopButton = document.getElementById("stop");
 stopButton.addEventListener("click", function () {
   // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ clearInterval
-  clearInterval(timerId); // останавливаем таймер
+  clearInterval(timerId);
+  // останавливаем таймер
+  timerId = null;
 });
 
 function updateClock() {
